@@ -1,5 +1,5 @@
 {
-  "name": "mktoho-calendar2023",
+  "name": "mktoho-japanese-calendar",
   "version": "1.0.0",
   "description": "Outputs a calendar for the year 2023 with holidays in Japan.",
   "main": "index.js",
@@ -31,5 +31,6 @@
   "dependencies": {
     "date-fns": "^2.29.3",
     "japanese-holidays": "^1.0.10"
-  }
+  },
+  "repository": "github:mktoho12/japanese-calendar"
 }
