@@ -1,6 +1,6 @@
 {
   "name": "mktoho-japanese-calendar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Outputs a calendar for the year 2023 with holidays in Japan.",
   "main": "index.js",
   "scripts": {
