@@ -1,13 +1,23 @@
 {
-  "name": "calendar2023",
+  "name": "mktoho-calendar2023",
   "version": "1.0.0",
-  "description": "",
+  "description": "Outputs a calendar for the year 2023 with holidays in Japan.",
   "main": "index.js",
   "scripts": {
+    "dev": "tsc --watch",
+    "lint": "eslint --ext .ts src",
+    "lint-watch": "esw -w --ext .ts src",
+    "build": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Calendar",
+    "Japanese",
+    "Holidays",
+    "typescript"
+  ],
+  "author": "mk@mktoho.org",
   "license": "ISC",
   "devDependencies": {
     "@types/japanese-holidays": "^1.0.1",
