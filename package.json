@@ -1,24 +1,45 @@
 {
   "name": "mktoho-japanese-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Outputs a calendar for the year 2023 with holidays in Japan.",
   "main": "index.js",
   "scripts": {
     "dev": "tsc --watch",
-    "lint": "eslint --ext .ts src",
-    "lint-watch": "esw -w --ext .ts src",
+    "lint": "eslint src/**/*.ts",
+    "lint:watch": "esw -w src/**/*.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": "github:mktoho12/japanese-calendar",
+  "bin": {
+    "mk-jcal2023": "./bin/mk-jcal2023"
+  },
+  "files": [
+    "bin",
+    "src",
+    "package.json",
+    "README.md",
+    "dist"
+  ],
   "keywords": [
     "Calendar",
     "Japanese",
     "Holidays",
     "typescript"
   ],
-  "author": "mk@mktoho.org",
+  "author": {
+    "name": "mktoho",
+    "email": "mk@mktoho.org"
+  },
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mktoho12/japanese-calendar/issues"
+  },
+  "homepage": "https://github.com/mktoho12/japanese-calendar",
   "devDependencies": {
     "@types/japanese-holidays": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
@@ -31,6 +52,5 @@
   "dependencies": {
     "date-fns": "^2.29.3",
     "japanese-holidays": "^1.0.10"
-  },
-  "repository": "github:mktoho12/japanese-calendar"
+  }
 }
